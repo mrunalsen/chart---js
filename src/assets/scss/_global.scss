@@ -1,0 +1,43 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    >li {
+        list-style: none;
+    }
+}
+
+.bg-white,
+.bg-black {
+    transition: all 0.2s ease-in-out;
+}
+
+.bg-black {
+    color: white;
+}
+
+/*
+ *  STYLE 4
+ */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border: 1px solid #555555;
+    border-radius: 8px;
+}

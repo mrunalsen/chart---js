@@ -1,0 +1,53 @@
+{
+    "health": {},
+    "task": {
+        "notStarted": 10,
+        "completed": 6,
+        "inProgress": 2
+    },
+    "progress": {
+        "contracts": 100,
+        "design": 80,
+        "procurement": 19,
+        "construction": 0,
+        "postConstruction": 0,
+        "projestClosed": 0
+    },
+    "time": {
+        "planned": 0,
+        "actual": 14,
+        "ahead": 14
+    },
+    "cost": {
+        "actual": 3100,
+        "planned": 4600,
+        "budget": 6000
+    },
+    "workload": {
+        "mike": {
+            "completed": 4,
+            "remaining": 0,
+            "overdue": 0
+        },
+        "jennifer": {
+            "completed": 2,
+            "remaining": 2,
+            "overdue": 0
+        },
+        "brandon": {
+            "completed": 0,
+            "remaining": 1,
+            "overdue": 0
+        },
+        "sam": {
+            "completed": 0,
+            "remaining": 3,
+            "overdue": 0
+        },
+        "george": {
+            "completed": 0,
+            "remaining": 1,
+            "overdue": 0
+        }
+    }
+}
