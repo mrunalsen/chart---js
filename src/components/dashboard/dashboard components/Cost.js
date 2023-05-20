@@ -50,11 +50,18 @@ export default function Cost() {
                             return '$' + 0;
                         } else
                             return label / 1000 + 'k';
+                    },
+                    stepSize: 1500,
+                    font: {
+                        size: 14,
                     }
                 },
                 scaleLabel: {
                     display: true,
                     labelString: '1k = 1000'
+                },
+                grid: {
+                    color: '#3a3d4b'
                 }
             },
         },
@@ -63,7 +70,12 @@ export default function Cost() {
                 display: false
             },
             legend: {
+                align: 'start',
                 labels: {
+                    font: {
+                        size: 14
+                    },
+                    padding: 15,
                     usePointStyle: true,
                     pointStyle: 'circle',
                     boxWidth: 6
@@ -73,7 +85,14 @@ export default function Cost() {
     };
     return (
         <div>
-            <h2>Cost</h2>
+            <div className='d-flex justify-content-between'>
+                <h4 className=' fw-normal'>Cost</h4>
+                <div>
+                    <i class="bi bi-arrows-fullscreen px-1 fs-5"></i>
+                    <i class="bi bi-gear px-1 fs-5"></i>
+                    <i class="bi bi-question-circle px-1 fs-5"></i>
+                </div>
+            </div>
             <Bar
                 data={data}
                 options={options}

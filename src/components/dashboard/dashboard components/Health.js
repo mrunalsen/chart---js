@@ -2,44 +2,37 @@ import React from 'react';
 
 export default function Health() {
     return (
-        <div>
-            <h2>Health</h2>
-            <div className='d-flex bg-black'>
-                <ul className='list-group list-group-flush col-3'>
-                    <li className='list-group-item'>
-                        <p className='me-4'>Time</p>
-                    </li>
-                    <li className='list-group-item'>
-                        <p className='me-4'>Tasks</p>
-                    </li>
-                    <li className='list-group-item'>
-                        <p className='me-4'>Workload</p>
-                    </li>
-                    <li className='list-group-item'>
-                        <p className='me-4'>Progress</p>
-                    </li>
-                    <li className='list-group-item'>
-                        <p className='me-4'>Cost</p>
-                    </li>
-                </ul>
-                <ul className='list-group list-group-flush col-9'>
-                    <li className='list-group-item'>
-                        <p>14% ahead of schedule.</p>
-                    </li>
-                    <li className='list-group-item'>
-                        <p>12 tasks to be completed.</p>
-                    </li>
-                    <li className='list-group-item'>
-                        <p>0 tasks overdue.</p>
-                    </li>
-                    <li className='list-group-item'>
-                        <p>14% complete.</p>
-                    </li>
-                    <li className='list-group-item'>
-                        <p>42% under budget.</p>
-                    </li>
-                </ul>
+        <>
+            <div className='d-flex justify-content-between'>
+                <h4 className='fw-normal'>Health</h4>
+                <div>
+                    <i class="bi bi-question-circle fs-5"></i>
+                </div>
             </div>
-        </div>
+            <table className='w-100'>
+                <tbody>
+                    <tr className='border-info border-bottom border-opacity-25'>
+                        <td>Time</td>
+                        <td className='text-muted'>14% ahead of schedule.</td>
+                    </tr>
+                    <tr className='border-info border-bottom border-opacity-25'>
+                        <td>Tasks</td>
+                        <td className='text-muted'>12 tasks o be complete.</td>
+                    </tr>
+                    <tr className='border-info border-bottom border-opacity-25'>
+                        <td>Workload</td>
+                        <td className='text-muted'>0 tasks overdue.</td>
+                    </tr>
+                    <tr className='border-info border-bottom border-opacity-25'>
+                        <td>Progress</td>
+                        <td className='text-muted'>14% complete.</td>
+                    </tr>
+                    <tr>
+                        <td>Cost</td>
+                        <td className='text-muted'>42% under</td>
+                    </tr>
+                </tbody>
+            </table>
+        </>
     );
 }

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import Dashboard from './components/dashboard/Dashboard';
 import Sidebar from './components/core/Sidebar';
-import Style from './style.scss';
 import Header from './components/core/Header';
+// import Style from './style.scss';
 
 function App() {
   const storedDarkMode = localStorage.getItem('DARK_MODE');

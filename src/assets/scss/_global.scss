@@ -6,8 +6,8 @@
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 
     >li {
         list-style: none;
@@ -16,15 +16,19 @@ ul {
 
 .bg-white,
 .bg-black {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .bg-black {
-    color: white;
+    color: #adafb1;
+}
+
+.bi {
+    cursor: pointer;
 }
 
 /*
- *  STYLE 4
+ * Custom scroll bar
  */
 
 ::-webkit-scrollbar-track {

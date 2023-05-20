@@ -33,22 +33,22 @@ export default function Dashboard(props) {
     const { mode } = props;
     return (
         <div className={`${props.mode === 'light' ? 'bg-white' : 'dashboard'} row g-0 overflow-auto h-100`}>
-            <div className='col-12 col-lg-6 col-xxl-4 border border-opacity-25 border-white'>
+            <div className='col-12 col-lg-6 col-xxl-4 border border-opacity-25 border-info p-4'>
                 <Health />
             </div>
-            <div className='col-12 col-lg-6 col-xxl-4 border border-opacity-25 border-white'>
+            <div className='col-12 col-lg-6 col-xxl-4 border border-opacity-25 border-info p-4'>
                 <Task />
             </div>
-            <div className='col-12 col-lg-6 col-xxl-4 border border-opacity-25 border-white'>
+            <div className='col-12 col-lg-6 col-xxl-4 border border-opacity-25 border-info p-4'>
                 <Progress />
             </div>
-            <div className='col-12 col-lg-6 col-xxl-4 border border-opacity-25 border-white'>
+            <div className='col-12 col-lg-6 col-xxl-4 border border-opacity-25 border-info p-4'>
                 <Time />
             </div>
-            <div className='col-12 col-lg-6 col-xxl-4 border border-opacity-25 border-white'>
+            <div className='col-12 col-lg-6 col-xxl-4 border border-opacity-25 border-info p-4'>
                 <Cost />
             </div>
-            <div className='col-12 col-lg-6 col-xxl-4 border border-opacity-25 border-white'>
+            <div className='col-12 col-lg-6 col-xxl-4 border border-opacity-25 border-info p-4'>
                 <Workload />
             </div>
         </div>

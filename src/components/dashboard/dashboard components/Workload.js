@@ -24,7 +24,7 @@ export default function Stackedchart() {
             {
                 label: 'Overdue',
                 data: [],
-                backgroundColor: ['Red']
+                backgroundColor: ['#f25149']
             },
         ]
     };
@@ -43,6 +43,9 @@ export default function Stackedchart() {
                         return ''; // Return an empty string for odd values
                     },
                     stepSize: 2
+                },
+                grid: {
+                    color: '#3a3d4b',
                 }
             },
             y: {
@@ -50,6 +53,11 @@ export default function Stackedchart() {
                 grid: {
                     drawOnChartArea: false,
                 },
+                ticks: {
+                    font: {
+                        size: 14,
+                    }
+                }
             }
         },
         plugins: {
@@ -57,7 +65,13 @@ export default function Stackedchart() {
                 display: false,
             },
             legend: {
+                align: 'start',
+                padding: 15,
                 labels: {
+                    font: {
+                        size: 14
+                    },
+                    padding: 15,
                     usePointStyle: true,
                     pointStyle: 'circle',
                     boxWidth: 6
@@ -67,7 +81,14 @@ export default function Stackedchart() {
     };
     return (
         <div>
-            <h2>Workload</h2>
+            <div className='d-flex justify-content-between'>
+                <h4 className=' fw-normal'>Workload</h4>
+                <div>
+                    <i class="bi bi-arrows-fullscreen px-1 fs-5"></i>
+                    <i class="bi bi-gear px-1 fs-5"></i>
+                    <i class="bi bi-question-circle px-1 fs-5"></i>
+                </div>
+            </div>
             <Bar
                 data={data}
                 options={options}
